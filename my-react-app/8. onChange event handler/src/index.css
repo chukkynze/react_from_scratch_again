@@ -1,0 +1,81 @@
+.student{
+  font-family: Arial sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid hsla(0, 0%, 0%, 0.798);
+}
+
+.student p{
+  margin: 0px;
+}
+
+.welcome-message{
+  font-size: 2.5em;
+  background-color: hsl(123, 64%, 32%);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+
+.login-prompt{
+  font-size: 2.5em;
+  background-color: hsl(347, 82%, 46%);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+.list-category{
+  font-size: 2.5em;
+  font-weight: bold;
+  color: hsla(0, 0%, 20%);
+  margin-bottom: 10px;
+  text-align: center;
+  border: 3px solid hsla(0, 0%, 0%, 0.798);
+  border-radius: 5px;
+  background-color: hsla(185, 100%, 50%);
+}
+
+.list-items li{
+  font-size: 2.5em;
+  list-style: none;
+  color: hsla(0, 0%, 25%);
+  text-align: center;
+  margin: 0;
+}
+
+.list-items li:hover{
+  color: hsla(0, 0%, 45%);
+  cursor: pointer;
+}
+
+.counter-container{
+  text-align: center;
+  font-family: Arial sans-serif;
+}
+
+.count-display{
+  font-size: 10em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.counter-button{
+  width: 200px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px 5px;
+  background-color: hsla(146, 71%, 30%, 0.8);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.counter-button:hover{
+  background-color: hsla(146, 71%, 30%, 0.7);
+  cursor: pointer;
+}
