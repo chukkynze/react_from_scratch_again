@@ -16,9 +16,9 @@ function MyComponent() {
 
     setCars(prevCars => [...prevCars, newCar])
 
-    setCarYear(prevCarYear => new Date().getFullYear())
-    setCarMake(prevCarMake => "")
-    setCarModel(prevCarModel => "")
+    setCarYear(new Date().getFullYear())
+    setCarMake("")
+    setCarModel("")
   }
 
 
