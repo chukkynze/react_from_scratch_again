@@ -1,10 +1,9 @@
-// import MyComponent from "./MyComponent.jsx";
-import MyComponentUnmount from "./MyComponentUnmount.jsx";
+import DigitalClock from "./DigitalClock.jsx";
 
 function App() {
 
     return(
-      <MyComponentUnmount />
+      <DigitalClock />
     );
 }
 
