@@ -1,43 +1,27 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 
 function MyComponent() {
 
-  const [count, setCount] = useState(0);
-  const [color, setColor] = useState("green");
+  // let [number, setNumber] =  useState(0);
 
-  // 1. useEffect(() => {})             Runs after every re-render of component for any reason
-  // useEffect(() => {
-  //   document.title = `Count ${count}`;
-  // });
+  const inputRef = useRef(0);
 
-  // 2. useEffect(() => {}, [])         Runs only on mount - great for one-and-done code
-  // useEffect(() => {
-  //   document.title = `This is the title of the page`;
-  // }, [count]);
-
-  // 3. useEffect(() => {}, [value(s))  Runs on mount + when value changes - very specific
   useEffect(() => {
-    document.title = `Count ${count} - ${color}`;
-  }, [color, count]);
+    console.log("Component rendered");
+  });
 
-  function addCount(){
-    setCount(prevCount => prevCount + 1);
-  }
-
-  function subtractCount(){
-    setCount(prevCount => prevCount - 1);
-  }
-
-  function changeColor(){
-    setColor(prevColor => prevColor === "green" ? "red" : "green")
+  function handleClick(){
+    // setNumber(prevNumber => prevNumber + 1);
+    inputRef.current.focus();
+    inputRef.current.style.backgroundColor = "blue";
   }
 
   return(
     <>
-      <p style={{color: color}}>Count: {count}</p>
-      <button onClick={addCount}>Add</button>
-      <button onClick={subtractCount}>Subtract</button>
-      <button onClick={changeColor}>Change Color</button>
+      <button onClick={handleClick}>
+        Click me!
+      </button>
+      <input ref={inputRef}/>
     </>
   );
 }

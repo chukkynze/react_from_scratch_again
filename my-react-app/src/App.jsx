@@ -1,10 +1,9 @@
-import ComponentA from "./ComponentA.jsx";
-import React from "react";
+import MyComponent from "./MyComponent.jsx";
 
 function App() {
 
     return(
-      <ComponentA />
+      <MyComponent />
     );
 }
 
