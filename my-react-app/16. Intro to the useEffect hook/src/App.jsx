@@ -1,4 +1,4 @@
-// import MyComponent from "./MyComponent.jsx";
+// import Stopwatch from "./Stopwatch.jsx";
 import MyComponentUnmount from "./MyComponentUnmount.jsx";
 
 function App() {
